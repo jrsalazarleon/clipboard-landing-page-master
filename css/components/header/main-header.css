@@ -1,0 +1,50 @@
+.main-header {
+    padding: 80px 35px;
+    background-image: url(/resources/png/bg-header-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-header h1 {
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: var(--bold);
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.main-header p {
+    color: var(--grayish-blue);
+    font-size: 18px;
+    font-weight: var(--semi-bold);
+    line-height: 1.6;
+    text-align: center;
+    width: 350px;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.links-section a {
+    color: var(--white);
+    font-weight: var(--bold);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    margin: 10px 0;
+    text-decoration: none;
+    padding: 25px;
+    width: 330px;
+}
+
+.links-section a:nth-child(1) {
+    background-color: var(--strong-cyan);
+}
+
+.links-section a:nth-child(2) {
+    background-color: var(--light-blue);
+}

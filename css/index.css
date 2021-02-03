@@ -1,0 +1,16 @@
+@import "/css/components/header/main-header.css";
+@import "/css/components/main/main-content.css";
+@import "/css/components/footer/main-footer.css";
+@import "/css/base/variables.css";
+@import "/css/base/reset.min.css";
+@import "/css/base/utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;600&display=swap');
+
+
+#root {
+    min-width: 375px;
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    font-family: var(--bai-jamjuree);
+}
