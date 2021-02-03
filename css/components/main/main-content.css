@@ -1,5 +1,5 @@
 .main-content {
-    padding: 0 35px;
+    padding: 0 35px 100px 35px;
 }
 
 .keep-track-section h2 {
@@ -10,7 +10,7 @@
     padding: 20px 0;
 }
 
-.keep-track-section > p {
+.keep-track-section>p {
     color: var(--grayish-blue);
     font-size: 18px;
     line-height: 1.5;
@@ -18,16 +18,9 @@
     width: 340px;
 }
 
-.keep-track-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .keep-track-reasons {
     padding: 50px 0 100px 0;
     text-align: center;
-    border: 1px solid blue;
 }
 
 .keep-track-reasons img {
@@ -51,4 +44,209 @@
     line-height: 1.8;
     margin-top: 10px;
     width: 330px;
+}
+
+.keep-track-list li p br {
+    display: none;
+}
+
+.access-clipboard-section h2 {
+    font-size: 26px;
+    font-weight: var(--bold);
+    color: var(--dark-grayish-blue);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.access-clipboard-section>p {
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 350px;
+}
+
+.access-clipboard-section img {
+    width: 350px;
+}
+
+.supercharge-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.supercharge-articles article {
+    text-align: center;
+}
+
+.supercharge-articles article:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.supercharge-articles article h3 {
+    color: var(--dark-grayish-blue);
+    font-size: 18px;
+    font-weight: var(--bold);
+    padding-bottom: 10px;
+}
+
+.supercharge-articles article p {
+    font-size: 16px;
+    color: var(--grayish-blue);
+    line-height: 1.7;
+}
+
+.supercharge-articles article svg {
+    margin-bottom: 20px;
+}
+
+.supercharge-articles article:nth-child(2) p {
+    width: 325px;
+}
+
+.logo-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-company img {
+    margin: 30px 0;
+    width: 125px;
+}
+
+.clipboard-section {
+    margin-top: 80px;
+}
+
+.clipboard-section h2 {
+    font-size: 26px;
+    font-weight: var(--bold);
+    color: var(--dark-grayish-blue);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.clipboard-section p {
+    color: var(--grayish-blue);
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    .supercharge-articles article p {
+        width: 350px;
+    }
+
+    .clipboard-section p {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-content {
+        padding: 0 0 100px 0;
+    }
+
+    .keep-track-section>p {
+        width: 700px;
+    }
+
+    .keep-track-reasons {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 35px 100px 0;
+        width: 100%;
+    }
+
+    .keep-track-reasons img {
+        width: 600px;
+        position: relative;
+        right: 30px;
+    }
+
+    .keep-track-list {
+        text-align: left;
+    }
+
+    .keep-track-list li p br {
+        display: inline;
+    }
+
+    .access-clipboard-section p {
+        width: 700px;
+    }
+
+    .access-clipboard-section img {
+        width: 600px;
+    }
+
+    .supercharge-articles {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 50px 0;
+        width: 100%;
+    }
+
+    .supercharge-articles article:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .supercharge-articles article h3 {
+        padding: 10px;
+    }
+
+    .supercharge-articles article p {
+        width: 300px;
+    }
+
+    .supercharge-articles article svg {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0;
+    }
+
+    .logo-company {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 100px 0;
+    }
+
+    .logo-company img {
+        width: auto;
+    }
+
+    .clipboard-section {
+        margin-top: 120px;
+    }
+
+    .clipboard-section p {
+        width: 600px;
+        line-height: 1.8;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .keep-track-reasons {
+        padding-right: 150px;
+    }
+
+    .keep-track-reasons img {
+        width: auto;
+        right: 30px;
+    }
+
+    .keep-track-list {
+        position: relative;
+        top: 30px;
+        height: 450px;
+    }
+
+    .keep-track-list li p {
+        width: 400px;
+    }
 }

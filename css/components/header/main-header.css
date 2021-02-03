@@ -29,22 +29,25 @@
     padding: 20px 0;
 }
 
-.links-section a {
-    color: var(--white);
-    font-weight: var(--bold);
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    margin: 10px 0;
-    text-decoration: none;
-    padding: 25px;
-    width: 330px;
+@media screen and (min-width: 1024px) {
+    .main-header {
+        background-image: url(/resources/png/bg-header-desktop.png);
+    }
+
+    .main-header h1 {
+        font-size: 36px;
+    }
+
+    .main-header p {
+        font-size: 20px;
+        width: 690px;
+    }
+
+    .links-section {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 600px;
+        margin-top: 50px;
+    }
 }
 
-.links-section a:nth-child(1) {
-    background-color: var(--strong-cyan);
-}
-
-.links-section a:nth-child(2) {
-    background-color: var(--light-blue);
-}
